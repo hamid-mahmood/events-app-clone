@@ -1,0 +1,139 @@
+header {
+  height: 300px;
+  padding: 20px;
+  background: linear-gradient(255deg, #62c08e, transparent);
+  > div {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h1 {
+    width: 60%;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    ul {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      gap: 15px;
+      li {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 80px 30px;
+  // min-height: 300px;
+}
+
+.home-page-body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .card {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(even) {
+      direction: rtl;
+    }
+    .image {
+      // width: 40%;
+    }
+    .content {
+      width: 50%;
+    }
+  }
+}
+
+.events-page {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  .event-card {
+    position: relative;
+    .event-title {
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+  }
+}
+
+.cat-event {
+  width: 100%;
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: flex-start;
+    .cat-event-card {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+    }
+  }
+}
+
+.single-event {
+  .email-register {
+    margin-bottom: 15px;
+    label {
+      display: flex;
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    input {
+      height: 40px;
+      min-width: 350px;
+      box-shadow: none;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      border-radius: 5px;
+      height: 40px;
+      min-width: 150px;
+      border: none;
+      text-transform: uppercase;
+      margin-left: 10px;
+      font-weight: 600;
+      background: #dcfff3;
+      cursor: pointer;
+      &:hover {
+        color: #dcfff3;
+        background: #333;
+      }
+    }
+  }
+}
